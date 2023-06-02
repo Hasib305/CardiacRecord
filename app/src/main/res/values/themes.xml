@@ -19,6 +19,6 @@
         <item name="boxStrokeWidth">1dp</item>
     </style>
     <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
-
+        <item name="android:background">@drawable/round_drawable</item>
     </style>
 </resources>
