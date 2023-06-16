@@ -1,0 +1,109 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="@color/blue_shade_1"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Left Column -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Date -->
+            <TextView
+                android:id="@+id/textDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date: "
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+
+                android:paddingBottom="8dp"/>
+
+            <!-- Name -->
+            <TextView
+                android:id="@+id/textName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name: "
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+
+                android:paddingBottom="8dp"/>
+
+            <!-- Systolic Pressure -->
+            <TextView
+                android:id="@+id/textSystolicPressure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Systolic Pressure: "
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+
+                android:paddingBottom="8dp"/>
+
+        </LinearLayout>
+
+        <!-- Right Column -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Time -->
+            <TextView
+                android:id="@+id/textTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time: "
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+
+                android:paddingBottom="8dp"/>
+
+            <!-- Diastolic Pressure -->
+            <TextView
+                android:id="@+id/textDiastolicPressure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Diastolic Pressure: "
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+
+                android:paddingBottom="8dp"/>
+
+            <!-- Heart Rate -->
+            <TextView
+                android:id="@+id/textHeartRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Heart Rate: "
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+
+                android:paddingBottom="8dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
