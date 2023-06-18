@@ -40,31 +40,9 @@ public class UserRVAdapter extends RecyclerView.Adapter<UserRVAdapter.ViewHolder
     }
 
     @Override
-//    public void onBindViewHolder(@NonNull UserRVAdapter.ViewHolder holder, int position) {
-//        // setting data to our recycler view item on below line.
-//        UserRVModal userRVModal = userRVModalArrayList.get(position);
-//        holder.userNameTV.setText(userRVModal.getUserName());
-//        holder.heartTV.setText(userRVModal.getUserheart());
-//        holder.diostolicTV.setText(userRVModal.getUserdio() + "mm(Hg)");
-//        holder.systolicTV.setText(userRVModal.getUsersys() + "mm (Hg)");
-//        holder.time.setText(userRVModal.getUsertime());
-//        holder.date.setText(userRVModal.getUserdate());
-//        holder.cmnt.setText(userRVModal.getUserDesc());
-//
-//        // adding animation to recycler view item on below line.
-//        setAnimation(holder.itemView, position);
-//
-//        holder.itemView.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                userClickInterface.onUserClick(position);
-//            }
-//        });
-//    }
-
     public void onBindViewHolder(@NonNull UserRVAdapter.ViewHolder holder, int position) {
         // setting data to our recycler view item on below line.
-        UserRVModal userRVModal = userRVModalArrayList.get(holder.getAdapterPosition());
+        UserRVModal userRVModal = userRVModalArrayList.get(position);
         holder.userNameTV.setText(userRVModal.getUserName());
         holder.heartTV.setText(userRVModal.getUserheart());
         holder.diostolicTV.setText(userRVModal.getUserdio() + "mm(Hg)");
@@ -74,15 +52,17 @@ public class UserRVAdapter extends RecyclerView.Adapter<UserRVAdapter.ViewHolder
         holder.cmnt.setText(userRVModal.getUserDesc());
 
         // adding animation to recycler view item on below line.
-        setAnimation(holder.itemView, holder.getAdapterPosition());
+        setAnimation(holder.itemView, position);
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                userClickInterface.onUserClick(holder.getAdapterPosition());
+                userClickInterface.onUserClick(position);
             }
         });
     }
+
+
 
     private void setAnimation(View itemView, int position) {
         if (position > lastPos) {

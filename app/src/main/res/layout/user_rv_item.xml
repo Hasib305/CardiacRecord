@@ -20,47 +20,44 @@
             android:id="@+id/textDate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
             android:text="Date: "
-            android:textStyle="bold"
             android:textColor="#FFFFFF"
             android:textSize="18sp"
-            android:paddingBottom="8dp"/>
+            android:textStyle="bold" />
 
         <!-- Time -->
         <TextView
             android:id="@+id/textTime"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
             android:text="Time: "
-            android:textStyle="bold"
             android:textColor="#FFFFFF"
             android:textSize="18sp"
-            android:paddingBottom="8dp"/>
+            android:textStyle="bold" />
 
         <!-- Name -->
         <TextView
             android:id="@+id/textName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
             android:text="Name: "
-            android:textStyle="bold"
             android:textColor="#FFFFFF"
             android:textSize="18sp"
-            android:paddingBottom="8dp"/>
+            android:textStyle="bold" />
 
         <!-- Systolic Pressure -->
         <TextView
             android:id="@+id/textSystolicPressure"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
             android:text="Systolic Pressure: "
-            android:textStyle="bold"
             android:textColor="#FFFFFF"
             android:textSize="18sp"
-            android:paddingBottom="8dp"/>
-
-
-
+            android:textStyle="bold" />
 
 
         <!-- Diastolic Pressure -->
@@ -68,32 +65,32 @@
             android:id="@+id/textDiastolicPressure"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
             android:text="Diastolic Pressure: "
-            android:textStyle="bold"
             android:textColor="#FFFFFF"
             android:textSize="18sp"
-            android:paddingBottom="8dp"/>
+            android:textStyle="bold" />
 
         <!-- Heart Rate -->
         <TextView
             android:id="@+id/textHeartRate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
             android:text="Heart Rate: "
-            android:textStyle="bold"
             android:textColor="#FFFFFF"
             android:textSize="18sp"
-            android:paddingBottom="8dp"/>
+            android:textStyle="bold" />
         <!-- Comment -->
         <TextView
             android:id="@+id/textComment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
             android:text="Comment: "
-            android:textStyle="bold"
             android:textColor="#FFFFFF"
             android:textSize="18sp"
-            android:paddingBottom="8dp"/>
+            android:textStyle="bold" />
 
     </LinearLayout>
 </androidx.cardview.widget.CardView>
